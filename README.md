@@ -32,15 +32,32 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
+<!-- Answers to questions below -->
 1. What is the difference between an adaptive website and a fully responsive website?
+Answer: 
+Source: https://uxplanet.org/adaptive-vs-responsive-web-design-eead0c2c28a8
+“The important difference to note between the two different methods is that adaptive screen size is a lot less flexible than responsive screen design. Adaptive needs you to design for each screen size individually and, as I’ve come to learn, that’s pretty hard when you don’t have access to bigger screens.”
 
 2. Describe what it means to be mobile first vs desktop first.
-
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+Answer: In short; the difference is mainly about who takes priority during web design, either desktop or mobile (everything from how we create content, images, calls-to-action, and communication). Mobile-responsive is not the same thing as mobile-first.  
+Source: https://www.searchenginewatch.com/2019/03/05/mobile-first-design-for-2019/
+“As you can see, the mobile first design doesn’t mean changing your entire process. Instead, it means reimagining how we create content, images, CTAs, and communications while keeping a firm focus on mobile users’ needs.
+Stop spending too much time creating sub-par mobile sites that users hate. Instead, use these tips to build websites that search engines and (more importantly) web users will love.”
+ 
+3. What does font-size: 62.5% in the html tag do for us when using rem units?
+Answer: 
+Source: https://engageinteractive.co.uk/blog/em-vs-rem-vs-px
+“A typical method is to set the HTML font-size to 62.5%. That's because 62.5% of 16px (typical default browser font-size) is 10px. That would still make 1.6rem = 16px. This now means that if the user's default browser font-size is changed to, for example, 20px, 1.6rem would now equal 20px”
 
 4. How would you describe preprocessing to someone new to CSS?
-
+Answer: 
+Source: https://guide.freecodecamp.org/css/css-preprocessors/
+“CSS Preprocessors compile the code which is written using a special compiler, and then use that to create a css file, which can then be refereneced by the main HTML document. When using any CSS Preprocessor, you will be able to program in normal CSS just as you would if the preprocessor were not in place, but you also have more options available to you.” 
+ 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+Answer: Darken and Lighten are pretty useful. Escaping at a concept level makes sense, but still need more practice using. Edit: after yesterday’s preprocessing II project, I feel a bit better about escaping. 
+
+<!-- End answers to self-study questions -->
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
