@@ -8,7 +8,32 @@
   background-color: @nav-bg;
     h1 {
       font-size: 4rem;
+     
+    //=====Start awesome animation for H1...Stretch goal!===========
+      -webkit-animation: flip-horizontal-bottom 3s cubic-bezier(1, 1, 1, 1) both infinite;
+	        animation: flip-horizontal-bottom 3s cubic-bezier(1, 1, 1, 1) both infinite;
     }
+    @-webkit-keyframes flip-horizontal-bottom {
+      0% {
+        -webkit-transform: rotateX(0);
+                transform: rotateX(0);
+      }
+      100% {
+        -webkit-transform: rotateX(-360deg);
+                transform: rotateX(-360deg);
+      }
+    }
+    @keyframes flip-horizontal-bottom {
+      0% {
+        -webkit-transform: rotateX(0);
+                transform: rotateX(0);
+      }
+      100% {
+        -webkit-transform: rotateX(-360deg);
+                transform: rotateX(-360deg);
+      }
+    }
+    // =========== End animation for Stretch Goal! =============
       nav{
           .flex(row, space-around, center);
           
@@ -23,9 +48,11 @@
         } 
 // Below is the Task 5 for @mobile
   @media @phone {
-    .flex(column, space-between, center);
+    .flex(column, space-evenly, center);
     nav {
     width: 100%;
+    // margin-top: 2%;
+    padding: 2%;
     }
   }
 } //Close .navigation  

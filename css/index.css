@@ -175,6 +175,28 @@ p {
 }
 .navigation h1 {
   font-size: 4rem;
+  -webkit-animation: flip-horizontal-bottom 3s cubic-bezier(1, 1, 1, 1) both infinite;
+  animation: flip-horizontal-bottom 3s cubic-bezier(1, 1, 1, 1) both infinite;
+}
+@-webkit-keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+    transform: rotateX(-360deg);
+  }
+}
+@keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+    transform: rotateX(-360deg);
+  }
 }
 .navigation nav {
   display: flex;
@@ -194,11 +216,12 @@ p {
   .navigation {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
   }
   .navigation nav {
     width: 100%;
+    padding: 2%;
   }
 }
 footer {
@@ -274,6 +297,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-text {
     width: 100%;
+    margin-top: 5%;
   }
 }
 .home .walk .walk-text h3 {
