@@ -1,3 +1,4 @@
+/*I added this - escaping*/
 /*When you see a pattern, when you are reusing the same code over and over that's a good indication to create a mixin*/
 /*Parametric Mixins below*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -180,7 +181,7 @@ p {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
+  width: 35%;
   margin: 2%;
   text-decoration: none;
 }
@@ -241,11 +242,31 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-img {
+.home .walk .walk-text button {
+  display: block;
+  background-color: #22283A;
+  cursor: pointer;
+  width: 100px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #F6F7F8;
+  align-items: center;
+}
+.home .walk .walk-text button:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text button {
+    width: 100%;
+  }
+}
+.home .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.home .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
