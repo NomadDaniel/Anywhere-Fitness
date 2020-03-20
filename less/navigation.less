@@ -1,2 +1,25 @@
 // Navigation code here
 
+.navigation{
+  .flex(column, space-evenly, center);
+  margin: 2%;
+  color: @nav-font;
+  border: @nav-border;
+  background-color: @nav-bg;
+    h1 {
+      font-size: 4rem;
+    }
+      nav{
+          .flex(row, space-around, center);
+          
+          width: 50%;
+          margin: 2%;
+          text-decoration: none;
+            a {
+            text-decoration: none;
+            color: @header-font-color;
+            font-size: 1.5rem;  
+          }        
+        } 
+      } 
+      
